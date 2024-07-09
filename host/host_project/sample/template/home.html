@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'new.css' %}">
+    <script src="{% static 'ex.js' %}"></script>
+</head>
+<body>
+<h1>Good Morning</h1>
+<a href="ind">Next Page</a>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" name="n1">
+    <input type="submit">
+</form>
+{{data}}
+<img src="{% static 'img/rose.jfif' %}">
+</body>
+</html>
